@@ -5,9 +5,13 @@ from turtle import *
 import turtle
 import math
 
+# modified code from instructables website: 
+# https://www.instructables.com/id/Easy-Designs-Turtle-Graphics-Python/
+
+
 turtle.hideturtle()
 
-#exitonclick()
+# this function is taken from kylie jue (wave file)
 def save_img(filename):
   ts = turtle.getscreen()
   ts.getcanvas().postscript(file=filename)
@@ -16,7 +20,7 @@ speed(0) # sets the speed of drawing to 0, which is the fastest
 pencolor('black') # sets the color of the pen/lines to white
 bgcolor('red') # sets the color of the background/canvas to black
 
-up() # lifts up the pen, so no lines are drawn
+up()
 
 #note fd() means move forward, bk() means move back
 # rt() or lt() means tilt right by a certain angle
